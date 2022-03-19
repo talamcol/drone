@@ -1,0 +1,41 @@
+.commandsContainer {
+    width: 100%;
+    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+@media (min-width: 768px) {
+    .commandsContainer {
+        flex-direction: row;
+    }
+}
+
+.row {
+    display: flex;
+}
+
+.stacked {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.group {
+    width: 100%;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .group {
+        width: 33%;
+    }
+}
+
+.fullWidthButton {
+    width: 100%;
+    max-width: 1080px;
+    padding: 10px 20px;
+}

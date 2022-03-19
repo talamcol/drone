@@ -20,7 +20,18 @@ const statePort = 8890
 const host = "192.168.10.1"
 
 const handleError = (error: Error | null) => {
-  error && console.error(error)
+  if (error) {
+    console.error(error)
+    console.error("landing drone ...")
+    drone.send(
+      "emergency",
+      0,
+      "emergency".length,
+      sendCommandPort,
+      host,
+      handleError
+    )
+  }
 }
 
 const drone = dgram.createSocket("udp4")

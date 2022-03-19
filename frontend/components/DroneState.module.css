@@ -1,0 +1,31 @@
+.container {
+    padding: 10px 30px;
+    background-color: #6a5465;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.batteryContainer {
+    display: flex;
+}
+
+.batteryLevelFull {
+    position: relative;
+    width: 200px;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.batteryLevel {
+    position: absolute;
+    background-color: #2ccf6d;
+    height: 100%;
+}
+
+.batteryLevelText {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    margin-left: 10px;
+    font-size: 14px;
+}

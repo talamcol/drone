@@ -2,20 +2,30 @@
 
 [Documentation for the tello drone](https://dl-cdn.ryzerobotics.com/downloads/tello/20180910/Tello%20SDK%20Documentation%20EN_1.3.pdf)
 
-## Get started
+## Development
 
-For the frontend:
-
+### Frontend
 1. `cd frontend`
 2. `npm install`
 3. `npm run dev`
 
-For the backend:
+entry point is the file `pages/index.tsx`
 
+### Backend
 1. `cd backend`
 2. `npm install`
-3. connect to drone via wifi
-4. `npm start`
+3. `npm start`
+
+entry point is the file index.ts
+
+## Fly the drone
+1. `cd frontend`
+2. `npm run dev`
+3. power on the drone
+4. connect to drone via wifi on your computer
+5. `cd backend`
+6. `npm start`
+7. wait for the drone status to change on the UI
 
 ## Remarks
 
